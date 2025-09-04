@@ -1,0 +1,18 @@
+.DS_Store
+*.pyc
+__pycache__/
+.venv/
+.env
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+infra/terraform/build/
+
+# Lambda packages
+*.zip
+
+# OS files
+Thumbs.db

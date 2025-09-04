@@ -1,0 +1,10 @@
+```mermaid
+flowchart LR
+    U[User\nUpload receipt image] -->|PUT| S3[(Amazon S3 bucket)]
+    S3 -->|s3:ObjectCreated| L[Lambda: Receipt Processor]
+    L -->|AnalyzeExpense| TX[Amazon Textract]
+    L -->|PutItem| DDB[(Amazon DynamoDB)]
+    L -->|SendEmail| SES[Amazon SES]
+    classDef svc fill:#F2F6FF,stroke:#000,stroke-width:1px,rx:6,ry:6;
+    class S3,L,TX,DDB,SES svc;
+```

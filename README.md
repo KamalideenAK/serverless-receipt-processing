@@ -63,6 +63,7 @@ Receipts come in many shapes and formats. Manually entering or building custom O
 
 A Mermaid diagram and a PNG are included in `architecture/`.
 
+<img width="873" height="522" alt="image" src="https://github.com/user-attachments/assets/da4b59ed-0443-4f0d-80fa-8407e27ac861" />
 ---
 
 ## Repository layout
